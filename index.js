@@ -15,7 +15,11 @@ function autoboot(_callback){
   if (ready){
     callback();
   } else {
-    require(bootFile)(callback);
+    try{
+      require(bootFile)(callback);
+    } catch (err){
+      callback(err);
+    }
   }
 
 }
