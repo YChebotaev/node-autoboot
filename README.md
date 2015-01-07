@@ -8,7 +8,9 @@ install
 
 there is no npm module for this package
 
+```bash
 npm install --save YChebotaev/node-autoboot
+```
 
 usage
 -----
